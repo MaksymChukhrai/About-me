@@ -1,7 +1,7 @@
 :root{
     --primary-white-color: #ffffff;
     --test-background-color: rgba(0, 0, 4);
-
+--accent-blue-color:#007bff;
 }
 body{
     background-color:var(--test-background-color);
@@ -46,6 +46,25 @@ body{
     margin:0 auto;
     padding: 15px;
     z-index: 2;
+}
+.lang{
+    display: flex;
+    gap: 15px;
+    flex-direction: row;
+    justify-content: flex-end;
+    font-size: 13px;
+}
+.lang a {
+    color: var(--primary-white-color); /* Устанавливаем цвет для неактивных ссылок */
+    text-decoration: none;
+}
+.lang a:active {
+    color:var(--accent-blue-color);
+}
+.english:hover,
+.ukrain:hover,
+.russian:hover{
+cursor: pointer;
 }
 
 .about-title{
