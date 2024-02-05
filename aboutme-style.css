@@ -56,7 +56,7 @@ body{
 .myphoto {
     width: 200px; /* Задайте ширину и высоту контейнера */
     height: 200px;
-    border-radius: 60%; /* Сделайте круглый контейнер с помощью border-radius */
+    border-radius: 50%; /* Сделайте круглый контейнер с помощью border-radius */
     overflow: hidden; /* Обрежьте фотографию по границам контейнера */
 margin:0 auto;
 margin-bottom:20px;
@@ -65,10 +65,10 @@ margin-bottom:20px;
 
 .myphoto img {
     width: 100%; /* Заполните 100% ширины контейнера */
-    height: auto; /* Поддерживайте пропорции изображения */
+    height: 100%; /* Поддерживайте пропорции изображения */
     display: block; /* Уберите лишние промежутки отображения в строке */
     object-fit: cover; /* Сохраните пропорции и обрежьте изображение, чтобы оно полностью заполняло контейнер */
-    object-position: 20% 70%; /* Сместите видимую часть изображения вправо на 20% и по вертикали по центру (настройте значения в соответствии с вашими потребностями) */
+    object-position: 50% 50%; /* Сместите видимую часть изображения вправо на 20% и по вертикали по центру (настройте значения в соответствии с вашими потребностями) */
 }
 .aboutme{
     font-weight: 400;
@@ -128,4 +128,71 @@ h2{
 .social-icon-3:hover,
 .social-icon-3:focus{
     fill:#0077B5;
+}
+@media screen and (min-width: 768px) {
+    .main-container {
+    max-width: 768px;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    .main-container {
+        max-width: 1200px;
+        position: relative;
+        }
+    .aboutme,
+    .skills,
+    .mission,
+    .whyme,
+    .mycontacts,
+    .socials,
+    .project-title {
+        position: absolute;
+        padding: 20px;
+        /* border: 1px solid #ccc;
+        border-radius: 10px; */
+        }
+
+
+     .aboutme{
+        width: 400px;
+        top: 20vh;
+        left: -55vh;
+     }
+     .skills{
+        width: 650px;
+        top: 60vh;
+        left: -55vh;
+     }
+     .mission{
+        width: 500px;
+        top: 20vh;
+        left: 57vh;
+     }
+     .whyme{
+        width: 650px;
+        top: 50vh;
+        left: 40vh;
+     }
+     .project-title{
+        width: 550px;
+        top: 105vh;
+        left: 45vh;
+     }
+.mycontacts{
+    width: 550px;
+    top: 120vh;
+    left: -40vh;
+}
+.socials{
+    margin-top:0;
+    top: 140vh;
+    left: 40vh;
+    border:0;
+}
+.social-items{
+    padding-bottom: 0;
+}
+
 }
