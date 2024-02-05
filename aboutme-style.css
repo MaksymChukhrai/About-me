@@ -66,6 +66,13 @@ body{
 .russian:hover{
 cursor: pointer;
 }
+.project-link {
+    color: var(--accent-blue-color);
+}
+
+.project-link:active {
+    color: var(--primary-white-color);
+}
 
 .about-title{
     text-align: center;
@@ -199,11 +206,13 @@ h2{
         top: 105vh;
         left: 45vh;
      }
+
 .mycontacts{
     width: 550px;
     top: 120vh;
     left: -40vh;
 }
+
 .socials{
     margin-top:0;
     top: 140vh;
