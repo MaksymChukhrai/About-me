@@ -203,7 +203,7 @@ h2{
      }
      .project-title{
         width: 550px;
-        top: 105vh;
+        top: 115vh;
         left: 45vh;
      }
 
@@ -215,8 +215,9 @@ h2{
 
 .socials{
     margin-top:0;
-    top: 140vh;
-    left: 40vh;
+    position: inherit;
+    top: 100vh;
+    left: -10vw;
     border:0;
 }
 .social-items{
