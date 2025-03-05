@@ -1,0 +1,50 @@
+@media screen and (min-width: 1280px) {
+  .testimonial-container {
+    padding: 110px 88px;
+    max-width: 1280px;
+    margin: 0 auto;
+    .section-title {
+      font-size: 40px;
+      letter-spacing: 0.8px;
+      line-height: 1.2;
+      font-weight: 900;
+      margin-bottom: 60px;
+      text-align: left;
+      color: var(--primary-text-color);
+    }
+  }
+
+  .testimonial-card {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    .testimonial-content {
+      font-size: 20px;
+      width: 728px;
+      .quote{
+        position: relative;
+    }
+    .quote::before {
+        content: '\201C'; /* Используем специальный HTML-код для открывающих кавычек */
+        font-size: 80px;
+        position: absolute;
+        left: -10px;
+        top: -75px;
+        font-family: 'emoji';
+      }
+    }
+    .client-image {
+      margin: 0;
+      background: url("../../assets/images/client-mob.webp");
+      width: 352px;
+      height: 339px;
+    }
+  }
+  .client-info{
+    h4{
+        font-size: 24px;
+    }
+  }
+
+
+}

@@ -1,0 +1,37 @@
+@media screen and (min-width: 1280px) {
+  .about-me{
+    position: relative;
+    background-color: transparent;
+    background-image: linear-gradient(to right, rgba(227, 227, 235, 0.787), rgba(6, 42, 61, 0.088)), url('../../assets/images/skills-pc-menu-background.webp');
+   
+  }
+  .about-container {
+    padding: 110px 88px;
+    max-width: 1280px;
+    margin: 0 auto;
+
+    .section-title {
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+  }
+  .about-text {
+    font-size: 20px;
+    width: 722px;
+  }
+  .mission {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    margin-top: 60px;
+
+    h3 {
+      font-size: 40px;
+      margin-bottom: 24px;
+    }
+    .about-text {
+      font-size: 20px;
+      width: 722px;
+    }
+  }
+}

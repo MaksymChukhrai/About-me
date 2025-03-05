@@ -1,0 +1,18 @@
+@media  screen and (min-width:1280px){
+    .portfolio {
+        padding: 110px 0 110px 88px;
+        .portfolio-container{
+            .section-title{
+                font-size: 40px;
+                margin-bottom:60px;
+            }
+        }
+    }
+
+    .project-card {
+        width: 352px; /* Фиксированная ширина для pc */
+        margin: 0 auto; /* Центрирование карточки */
+    }
+
+
+}

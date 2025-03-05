@@ -1,0 +1,122 @@
+.hero{
+    position: relative;
+    margin-top: 87px;
+    // max-width: 450px;
+    margin-right: auto; 
+    margin-left: auto;
+    .video-background{
+        width: 100%;
+        height: 582px;
+        overflow: hidden;
+
+    }
+}
+.loading-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;
+  }
+
+.placeholder-image{
+     height: 582px;
+    width: 100%;
+   
+    background: url('../../assets/images/hero-placeholder.webp') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.profile-image {
+    position: absolute;
+    width: 316px;
+height: 389px;
+  
+    left: 0;
+    overflow: hidden;
+    background: url('../../assets/images/me-mob.webp');
+}
+
+.spinner {
+    width: 35px;
+    height: 35px;
+    z-index: 2;
+  }
+@media screen and (min-width: 350px){
+    .profile-image{
+        top: 24%;
+
+    }
+};
+
+@media screen and (min-width: 375px){
+    .profile-image{
+        top: 24%;
+    
+    }
+};
+    
+@media screen and (min-width: 425px){
+    .profile-image{
+        top: 24%;
+    
+    }
+};
+
+
+.contact-btn{
+    max-width: 343px;
+    padding: 14px 60px;
+    align-items: center;
+    border-radius: 2px;
+    background: linear-gradient(109deg, #2B64EB 1.67%, #3CBEF5 45.85%, #34D6DF 96.56%);
+    box-shadow: 6px 6px 30px 0px rgba(255, 255, 255, 0.25);
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+    margin-top: 16px;
+    a{
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.2; /* 24px */
+        letter-spacing: 0.4px;
+        color: #FFF;
+    }
+
+}
+.hero-text{
+    background: linear-gradient(110deg, #020D1F 3.16%, #0F264F 96.53%);
+    display: flex;
+    padding: 40px 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+    align-self: stretch;
+
+        h1{
+            color: #FFF;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 1.2; 
+        letter-spacing: 0.4px;
+            span{
+                font-size: 24px;
+                font-weight: 800;
+                letter-spacing: 0.48px;
+            }
+        }
+        h2{
+            color: #FFF;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 1.2; 
+        letter-spacing: 0.4px;
+        }
+
+}

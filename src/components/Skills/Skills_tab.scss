@@ -1,0 +1,41 @@
+@media (min-width: 768px) {
+    
+.skills-container {
+    padding: 80px 40px;
+    .skills-title{
+        font-size: 32px;
+        margin-bottom: 40px;
+    }
+}
+
+.skill-category {
+ margin-bottom: 0;
+      h3 {
+      font-size: 20px;
+
+    }
+  }
+  .skills-grid {
+    .skill-pair {
+      margin-bottom: 40px;
+    }
+  
+    &.backend .skill-pair {
+      margin-bottom: 0;
+    }
+  }
+
+.backend{
+        margin-bottom: 0;
+    }
+//   .skill-category:first-child{
+//     margin-bottom: 40px;
+//   }
+
+  .skills-grid .skill-item img {
+    width: 80px;
+    height: 80px;
+  }
+
+
+}

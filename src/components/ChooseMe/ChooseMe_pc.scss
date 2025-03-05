@@ -1,0 +1,46 @@
+
+@media screen and (min-width:1280px){
+.choose-me {
+    background-image: url('../../assets/images/pc-menu-choose-background.webp'), linear-gradient(110deg, #667791 3.16%, #0d2e67 96.53%);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: soft-light;
+    .choose-me-container {
+        padding: 100px 88px;
+        max-width: 1280px;
+        margin:0 auto;
+        .section-title{
+            font-size: 40px;
+            font-weight: 900;
+            letter-spacing: 0.8px;
+            margin-bottom: 44px;
+
+        }
+    }
+}
+.reasons-grid {
+
+    gap: 24px;
+
+    .reason-card-wrapper {
+      .reason-card {
+        flex: 1;
+        h3{
+            margin: 24px 0 8px;
+            font-size: 24px;
+        }
+        p{
+            font-size: 18px;
+        }
+        .reason-icon{
+            width: 100px;
+            height: 100px;
+             
+        }
+      }
+    }
+  }
+
+
+}

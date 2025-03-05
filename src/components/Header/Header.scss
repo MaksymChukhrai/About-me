@@ -1,0 +1,115 @@
+// src/components/Header/Header.scss
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+     background: linear-gradient(109deg, #176987 1.67%, #D8F3FF 45.85%, #BCDBDD 96.56%);
+    padding: 0;
+    
+    &.scrolled {
+      background-color: rgba(0, 0, 0, 0.9);
+    }
+  }
+  
+  .header_container {
+    max-width: 1200px;
+    padding: 8px 16px;
+    justify-content: space-between;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .header_name {
+    display: flex;
+    flex-direction: column;
+    
+    span {
+      &:first-child {
+        font-size: 20px;
+        color: var(--primary-text-color);
+        font-weight: 400;
+        line-height: 1.4; /* 28px */
+        letter-spacing: 0.4px;
+        text-transform: capitalize;
+      }
+      
+      &:last-child {
+        font-size: 36px;
+        color:var(--bolt-primary-text-color);
+        font-weight:800;
+        line-height: 1.2;
+        letter-spacing: 0.72px;
+      }
+    }
+  }
+  
+  .nav-menu {
+    ul {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      
+      li {
+        margin: 0 15px;
+        color: #fff;
+        cursor: pointer;
+        position: relative;
+        
+        &:after {
+          content: '';
+          position: absolute;
+          width: 0;
+          height: 2px;
+          bottom: -5px;
+          left: 0;
+          background-color: var(--primary-text-color);
+          transition: width var(--transition-speed);
+        }
+        
+        &:hover:after {
+          width: 100%;
+        }
+      }
+    }
+    
+
+  }
+  
+  .telegram-btn {
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 8px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: 0.3s ease;
+    
+    &:hover {
+      background-color: #fff;
+      color: #000;
+    }
+    
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+  
+  /* Burger Menu Positioning */
+  .burger-menu-container {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    
+    @media (max-width: 768px) {
+      display: block;
+    }
+  }
+  

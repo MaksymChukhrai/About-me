@@ -1,0 +1,84 @@
+// global.scss
+@import './variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: $font-heading;
+  color: $text-color;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color $transition-normal;
+  
+  &:hover {
+    color: $primary-color;
+  }
+}
+
+button, .btn {
+  cursor: pointer;
+  border: none;
+  font-family: $font-main;
+  transition: all $transition-normal;
+  
+  &:focus {
+    outline: none;
+  }
+}
+
+ul, ol {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 $spacing-md;
+  
+  @media (max-width: $breakpoint-md) {
+    padding: 0 $spacing-sm;
+  }
+}
+
+.section-title {
+  font-family: $font-heading;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: $spacing-lg;
+  text-align: center;
+  position: relative;
+  
+  // &::after {
+  //   content: '';
+  //   position: absolute;
+  //   bottom: -10px;
+  //   left: 50%;
+  //   transform: translateX(-50%);
+  //   width: 100px;
+  //   height: 3px;
+  //   background-color: $primary-color;
+  // }
+}
+

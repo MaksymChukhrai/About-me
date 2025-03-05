@@ -1,0 +1,43 @@
+@media screen and (min-width: 768px) {
+  .footer {
+    background-image: url("../../assets/images/footer_tab.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: soft-light;
+  }
+
+  .footer-container {
+    padding: 80px 80px 20px 80px;
+    .section-title {
+      font-size: 40px;
+      letter-spacing: 0.8px;
+      line-height: 1.2;
+      font-weight: 900;
+      margin-bottom: 24px;
+    }
+    .contact-info {
+      font-size: 16px;
+      .contact-details {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        gap:60px;
+        .contact-item>a>img{
+            width: 48px;
+           
+        }
+      }
+    }
+  }
+
+  .social-links {
+    gap:60px;
+  li > a > img {
+    width: 48px;
+    height: 48px;
+  }
+}
+  .copyright {
+    margin-top: 60px;
+  }
+}

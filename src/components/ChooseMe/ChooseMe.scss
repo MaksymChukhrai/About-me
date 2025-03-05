@@ -1,0 +1,58 @@
+.choose-me {
+    background-image: 
+      url('../../assets/images/mob-menu-choose-background.webp'),
+      linear-gradient(110deg, #667791 3.16%, #0d2e67 96.53%);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: soft-light;
+  }
+
+.choose-me-container{
+    padding: 40px 16px;
+    .section-title{
+        font-size: 24px;
+        font-weight: 900;
+        line-height: 1.2;
+        letter-spacing: 0.48px;
+        margin-bottom: 20px;
+        color: var(--secondary-text-color);
+        text-align: left;
+    }
+}
+
+.reasons-grid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    .reason-card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: var(--secondary-text-color);
+        h3{
+            text-align: center;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: normal;
+            text-transform: uppercase;
+            margin:14px 0 8px;
+        }
+        p{
+            font-family: 'Lato', sans-serif;
+            text-align: center;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+        }
+        .reason-icon{
+            width: 60px;
+            height: 60px;
+            border-radius: 2px;
+
+        }
+
+    }
+}

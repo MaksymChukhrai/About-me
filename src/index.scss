@@ -1,0 +1,36 @@
+@use "./styles/global.scss";
+@use "./styles/variables.scss" as vars;
+
+@use "./components/AboutMe/AboutMe.scss";
+@use "./components/AboutMe/AboutMe_tab.scss";
+@use "./components/AboutMe/AboutMe_pc.scss";
+
+@use "./components/ChooseMe/ChooseMe.scss";
+@use "./components/ChooseMe/ChooseMe_tab.scss";
+@use "./components/ChooseMe/ChooseMe_pc.scss";
+
+@use "./components/Footer/Footer.scss";
+@use "./components/Footer/Footer_tab.scss";
+@use "./components/Footer/Footer_pc.scss";
+
+@use "./components/Header/Header.scss";
+@use "./components/Header/Header_tab.scss";
+@use "./components/Header/Header_pc.scss";
+
+@use "./components/BurgerMenu/BurgerMenu.scss";
+
+@use "./components/Hero/Hero.scss";
+@use "./components/Hero/Hero_tab.scss";
+@use "./components/Hero/Hero_pc.scss";
+
+@use "./components/Portfolio/Portfolio.scss";
+@use "./components/Portfolio/Portfolio_tab.scss";
+@use "./components/Portfolio/Portfolio_pc.scss";
+
+@use "./components/Skills/Skills.scss";
+@use "./components/Skills/Skills_tab.scss";
+@use "./components/Skills/Skills_pc.scss";
+
+@use "./components/Testimonial/Testimonial.scss";
+@use "./components/Testimonial/Testimonial_tab.scss";
+@use "./components/Testimonial/Testimonial_pc.scss";

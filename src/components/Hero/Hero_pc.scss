@@ -1,0 +1,132 @@
+@media screen and (min-width: 1280px) {
+    .hero {
+        background: linear-gradient(to right, #112c4a, #0b193c);
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        position: relative;
+        
+        &::before,
+        &::after {
+          content: '';
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          width: calc(50vw - 640px);
+          background: linear-gradient(to right, #112c4a, #0b193c);
+          z-index: 1;
+        }
+    
+        &::before {
+          left: 0;
+        }
+    
+        &::after {
+          right: 0;
+        }
+      
+      .video-background {
+        max-width: 1280px;
+        width: 100%;
+        position: relative;
+    
+        
+        .video-visible {
+          height: 806px;
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+  
+      .hero-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+  
+      .hero-content {
+        display: flex;
+        position: relative;
+        width: 100%;
+        max-width: 1280px;
+        
+        .profile-image {
+          position: absolute;
+          left: 0;
+          top: -159px;
+          width: 374px;
+          height: 450px;
+          background: url(../../assets/images/me_872x689.webp);
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+        }
+  
+        .hero-text {
+          position: absolute;
+          top: -181px;
+          left: 50%;
+          transform: translateX(calc(-50% + 188px));
+          width: 500px;
+  
+          h1 {
+            display: block;
+            font-weight: 500;
+            
+            span {
+              font-size: 40px;
+              font-weight: 800;
+              line-height: 120%;
+              letter-spacing: 0.8px;
+            }
+          }
+  
+          h2 {
+            margin-top: 18px;
+            margin-bottom: 90px;
+            font-size: 36px;
+            line-height: 120%;
+            letter-spacing: 0.72px;
+          }
+        }
+      }
+    }
+ 
+  .placeholder-image{
+    background: url('../../assets/images/placeholder-image.webp') center/cover no-repeat;
+  }
+}
+  
+  // Additional responsive adjustments for larger screens
+  @media screen and (min-width: 1440px) {
+    .hero {
+      .hero-content {
+        .profile-image {
+          left: 20px;
+        }
+  
+        .hero-text {
+          transform: translateX(calc(-50% + 238px));
+        }
+      }
+    }
+  }
+  
+  @media screen and (min-width: 2560px) {
+    .hero {
+      .hero-content {
+        .profile-image {
+          left: 150px;
+        }
+  
+        .hero-text {
+          transform: translateX(calc(-50% + 338px));
+        }
+      }
+    }
+  }

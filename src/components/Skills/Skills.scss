@@ -1,0 +1,84 @@
+.skills-title {
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 1.2;
+  letter-spacing: 0.48px;
+  margin-bottom: 20px;
+  color: var(--primary-text-color);
+  text-align: left;
+}
+
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 16px;
+}
+
+.skill-category {
+  margin-bottom: 30px;
+
+  h3 {
+    color: var(--primary-text-color);
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 1.5;
+    letter-spacing: 0.4px;
+    text-align: left;
+    margin-bottom: 14px;
+  }
+}
+
+.skills-grid {
+  display: flex;
+  flex-direction: column;
+
+  /* Контейнер для пары иконок */
+  .skill-pair {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    // margin-bottom: 20px;
+
+    /* Чередование display: flex и display: block для пар */
+    //   &:nth-child(odd) {
+    //     display: block;
+    //   }
+
+    //   &:nth-child(even) {
+    //     display: flex;
+    //   }
+  }
+
+  .skill-item {
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    display: flex;
+
+    img {
+      width: 70px;
+      height: 70px;
+    }
+
+    p {
+      color: var(--primary-text-color);
+      text-align: center;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 150%; /* 30px */
+      letter-spacing: 0.4px;
+    }
+  }
+}
+
+/* Если экран больше мобильного - можно добавить дополнительные стили */
+@media (min-width: 768px) {
+  .skills-grid {
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .skill-pair {
+      width: 50%;
+    }
+  }
+}

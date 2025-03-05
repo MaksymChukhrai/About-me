@@ -1,0 +1,38 @@
+.background-skills{
+    background: url('../../assets/images/skills-background.webp') no-repeat center center/cover;
+}
+
+.about-container{
+    padding: 40px 16px;
+    .section-title{
+        font-size: 24px;
+        font-weight: 900;
+        line-height: 1.2; 
+        letter-spacing: 0.48px;
+        margin-bottom:14px;
+        color: var(--primary-text-color);
+        text-align: left;
+    }
+}
+.about-text{
+    color: var(--primary-text-color);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 22.5px */
+    letter-spacing: 0.3px;
+}
+
+.mission{
+    margin-top:20px;
+    h3{
+        color: var(--primary-text-color);
+        font-size: 24px;
+        font-weight: 800;
+        line-height: 1.2; /* 28.8px */
+        letter-spacing: 0.48px;
+        margin-bottom:14px;
+        text-align: right;
+
+    }
+}

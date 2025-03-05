@@ -1,0 +1,206 @@
+// src/components/BurgerMenu/BurgerMenu.scss
+
+.burger-menu-container {
+    position: relative;
+    z-index: 1000;
+    top: 10px;
+    
+    @media (max-width: 800px) {
+      display: block;
+    }
+
+  }
+  
+  .burger-icon {
+    cursor: pointer;
+    z-index: 1001;
+    position: relative;
+    width: 24px;
+    height: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+    span {
+      display: block;
+      width: 24px;
+      height: 3px;
+      background: var( --primary-text-color);
+      transition: var(--transition-speed);
+      border-radius: 2px;
+    }
+    
+    &.active {
+      span {
+        &:nth-child(1) {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(45deg);
+            background:#fff;
+            width: 100%;
+          }
+          
+          &:nth-child(2) {
+            opacity: 0;
+          }
+          
+          &:nth-child(3) {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(-45deg);
+            background:#fff;
+            width: 100%;
+          }
+      }
+    }
+  }
+  
+  .burger-menu {
+    position: fixed;
+    height: 100vh;
+    width: 380px;
+    background-image: url('../../assets/images/mob-menu-background.webp');
+    background:  lightgray -920.802px -84.901px / 412.977% 126.995% no-repeat, 
+    linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), 
+    linear-gradient(110deg, #020D1F 3.16%, #0F264F 96.53%);
+    display: flex;
+    flex-direction: column;
+    transform: translateX(100%); /* Начальная позиция за пределами экрана */
+    transition: transform var(--transition-speed), opacity var(--transition-speed); /* Прямое определение вместо переменной */
+    z-index: 1000;
+    top: -32px;
+    left: -335px;
+    opacity: 0; /* Чтобы меню было видимо при появлении */
+   
+    
+    &.open {
+      transform: translateX(0);
+       opacity: 1;
+       top: -32px;
+       left: -335px;
+      }
+    
+    .close-button {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      
+      img {
+        width: 24px;
+        height: 24px;
+      }
+    }
+    
+    .menu-content {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      padding: 60px 30px 40px 50px;
+    }
+    
+    .name-section {
+      margin-bottom: 20px;
+      
+      h2 {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 1.4;
+        letter-spacing: 0.4px;
+        color:#FEFAFA;
+      }
+      
+      h1 {
+        font-size: 36px;
+          font-weight: 900;
+        line-height: 1.2; 
+        letter-spacing: 0.72px;
+        background: var(--1, linear-gradient(109deg, #2B64EB 1.67%, #3CBEF5 45.85%, #34D6DF 96.56%));
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+    
+    .burger-nav {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 20px;
+      
+      .nav-link {
+        color: #fff;
+        font-size: 18px;
+        margin: 10px 0;
+        text-decoration: none;
+        position: relative;
+        
+        &:after {
+          content: '';
+          position: absolute;
+          width: 0;
+          height: 2px;
+          bottom: -5px;
+          left: 0;
+          background-color: #fff;
+          transition: width 0.3s ease;
+        }
+        
+        &:hover:after {
+          width: 100%;
+        }
+      }
+    }
+    
+    .burger-menu-footer {
+    
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      
+      .contact-button {
+        background-color: transparent;
+        color: #fff;
+        border: 2px solid #fff;
+        padding: 10px 24px;
+        border-radius: 30px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: 0.3s ease;
+        margin-bottom: 30px;
+        
+        &:hover {
+          background-color: #fff;
+          color: #000;
+        }
+      }
+      
+      .social-icons {
+        display: flex;
+        gap: 20px;
+        
+        .social-icon {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          transition: 0.3s ease;
+          
+          img {
+            width: 24px;
+            height: 24px;
+          }
+          
+          &:hover {
+            transform: translateY(-5px);
+          }
+        }
+      }
+    }
+  }
+  .no-scroll {
+    overflow: hidden;
+}

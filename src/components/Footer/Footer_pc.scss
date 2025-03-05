@@ -1,0 +1,57 @@
+@media screen and (min-width: 1280px) {
+  .footer {
+    background-image: url("../../assets/images/placeholder-image.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: soft-light;
+    height: 586px;
+  }
+
+  .footer-container {
+    padding: 110px 88px 20px;
+    .section-title {
+      font-size: 40px;
+      text-align: left;
+    }
+    .contact-info {
+        p{
+            font-size: 20px;
+            width: 726px;
+            text-align: left;
+        }
+        .contact-details {
+          margin-top: 50px;
+          margin-bottom: 50px;
+          gap:280px;
+          .contact-item>a>img{
+            width: 48px;
+            height: 48px;
+           
+        }
+        }
+      }
+  }
+  .social-links {
+    gap:60px;
+  li > a > img {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+  .copyright {
+    margin-top: 60px;
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        p{
+            width: 460px !important;
+            font-size: 12px !important;
+            text-align: center!important;
+        }
+
+  
+  }
+}
